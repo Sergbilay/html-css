@@ -18,6 +18,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'segoe-wp_bold';
+	src: url('../fonts/segoe-wp-bold/segoe-wp_856.eot');
+	src: local('☺'),
+	url('../fonts/segoe-wp-bold/segoe-wp_856.woff') format('woff'),
+	url('../fonts/segoe-wp-bold/segoe-wp_856.ttf') format('truetype'),
+	url('../fonts/segoe-wp-bold/segoe-wp_856.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -87,24 +97,23 @@ img {
 .menu-item:last-child {
 	margin-right:0;
 }
-	
-}
 .menu-item a{
 	display: flex;
 	align-items: center;
 	height: 40px;
-	padding: 0 20px;
-	margin-right: 55px;
+	
 }
 .menu-item a:hover {
 	background: black;
 	color: white;
 }
-
-
 .hero-content {
 	display: flex;
 	align-items: center;
+}
+.ipad-img {
+	position: relative;
+    right: -70px;
 }
 .Apple-reviews {
 	padding: 181px 0;
@@ -143,13 +152,16 @@ img {
 .video-review:hover {
 	background: red;
 }
+.main {
+	margin-bottom: 60px;
+}
 .main-content {
 	display: flex;
 }
-
 .content-left {
 	width: 70%;
 	width: calc((70% * 3) / 3);
+	margin-right: 25px;
 }
 .top-block {
 	width: 100%;
@@ -180,16 +192,6 @@ img {
 	font-size: 14px;
 	color: #aaaaaa;
 }
-.content-right {
-	width: 30%;
-}
-.right-top {
-	border: 1px solid grey;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .articles {
 	margin-top: 40px;
 	display:flex;
@@ -197,6 +199,7 @@ img {
 }
 .articles-block {
 	margin-right: 20px;
+	max-width: 218px;
 }
 .articles-block:last-child {
 	margin-right:0;
@@ -226,19 +229,170 @@ img {
 	margin-top: 65px;
 	display:flex;
 }
+.saidebar {
+	width: 30%;
+	max-width: 297px;
+}
+.saidebar-block1 {
+	width: 100%;
+	height: 250px;
+	border: 1px solid #d2d2d2;
+	text-align: center;
+	position: relative;
+}
+.saidebar-block1 h2 {
+	margin-top: 20px;
+	font-size: 21px;
+	font-family: "segoe-wp",sans-serif;
+	color: #9ba08d;
+}
+.saidebar-block1 p {
+	margin-top: 10px;
+	font-size: 39px;
+	font-family: "segoe-wp_bold",sans-serif;
+	color: #b8dc58;
+}
+.img-max {
+	margin-top: 12px;
+	position: absolute;
+	top: 105px;
+    left: 18px;
+	width: 110px;
+	height: 160px;
+}
+.img-min {
+	width: 70px;
+	height: 100px;
+	position: absolute;
+	top: 170px;
+    right: 139px;
+}
+.img-css {
+	width: 56px;
+	height: 33px;
+	position: absolute;
+	bottom: 10px;
+    right: 23px;
+}
+.saidebar-block2{
+    position: relative;
+    width: 100%;
+    border: 1px solid #86e7f0;
+    background: #86e7f0;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+.radius-block {
+	position: absolute;
+	top: -25px;
+	left: 75px;
+	width: 130px;
+	height: 130px;
+	border-radius: 100px; 
+    border: 5px solid white;
+	background: #ef809f;
+}
+
+.redradius-text{
+	text-align: center;
+    font-size: 30px;
+	margin: 18px;
+	
+}
+
+.saidebar-block2-title{
+	font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.saidebar-block2-text{
+    font-size: 24px;
+}
+
+.saidebar-block2-button{
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #58d1dc;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px auto;
+}
+.saidebar-block3{
+    width: 100%;
+    border: 1px solid #393a39;
+    background: #393a39;
+    text-align: center;
+    color: #FFF;
+    margin-top: 25px;
+}
+
+.saidebar-block3-title{
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-top: 25px;
+	color: #cbcccb;
+}
+
+.saidebar-block3-text{
+    font-size: 16px;
+    text-align: left;
+	color: #cbcccb;
+	font-family: "segoe-wp",sans-serif;
+	margin-top: 20px;
+    padding-left: 15px;
+	padding-right: 30px;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.saidebar-block3-button{
+    max-width: 178px;
+    height: 33px;
+    border: 1px solid #bb4465;
+    border-radius: 5px;
+    padding: 5px 30px;
+    background: #bb4465;
+    color: #fff;
+    font-size: 20px;
+    margin: 12px;
+}
+
+.saidebar-block3-button:hover{
+    cursor: pointer;
+}
+
+.block-ad3-redline{
+    width: 100%;
+    height: 7px;
+    background: #bb4465;
+   
+}
 .footer-content {
 	background: #393a39;
 	padding-top: 28px;
 	padding-bottom: 44px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+.footer-text {
+	width: 100%;
+	display: flex;
 	justify-content: center;
 }
 .footer-text p {
 	color: #f5f5f5;
 	font-family: "segoe-wp",sans-serif;
 	font-size: 16px;
-	margin-right: 100px;
 }
 .social-networks {
 	display: flex;
