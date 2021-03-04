@@ -1,0 +1,31 @@
+.header-content{
+    @include flex(space-between, center);
+    padding-top: 35px;
+    opacity: none;
+    &__logo{
+        margin-left: 80px;
+        color: white;
+    }
+    &__logo_text{
+        font-family:"Quite Chocolatey";
+        font-size: 88px;
+    }
+    &__menu{
+        @include flex();
+        margin-right: 90px;
+        font-size: 18px;
+        &_nav {
+            margin-right: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+        }
+        &_nav:last-child {
+            margin-right: 0;
+        }
+        &_nav:hover{
+            background: black;
+            color: white;
+        }
+    }
+}

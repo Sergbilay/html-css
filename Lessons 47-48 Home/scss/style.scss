@@ -1,0 +1,96 @@
+@import "./mixins";
+@import "./font";
+@import "_Headcontent";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(../img/background/img_bg.png) no-repeat;
+    z-index: 1000;
+    border-radius: 3px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 0, 0, 0.6);
+    z-index: 2000;
+}
+
+
+.header-form {
+    margin-left: 105px;
+    display: flex;
+    &__content {
+        width: 50%;
+        &_title {
+            margin-top: 130px;
+            font-size: 90px;
+            font-family: "Montserrat-Bold";
+            &_car {
+                color: white;
+            }
+        }
+        &_text {
+            max-width: 470px;
+            margin-top: 50px;
+            margin-bottom: 160px;
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
+.header-form__form {
+    width: 50%;
+    @include flex();
+    position: absolute;
+    .header-form__box {
+        @include flex-direction();
+        background: white;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        position: relative;
+        top: 180px;
+        left: 440px;
+        .header-form__box_title {
+            margin-top: 33px;
+            color: black;
+            font-size: 22px;
+            font-family: "Montserrat-Bold";
+        }
+    }
+    .header-form__box form{
+        @include flex-direction();
+        margin: 12px 25px 25px 25px;
+    }
+    .header-form__box input {
+        width: 350px;
+        border-radius: 5px;
+        margin-top: 16px;
+        padding: 20px;
+        border: none;
+        background: #eeeeee;
+        font-size: 20px;
+    }
+    .header-form__box_button input{
+        background: red;
+        color:white;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
