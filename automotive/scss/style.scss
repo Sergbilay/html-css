@@ -1,0 +1,26 @@
+@import "./var";
+@import "./mixins";
+@import "./fonts";
+@import "./normilize";
+.wrapper{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_posrel {
+        position: relative;
+        z-index: 1;
+    }
+}
+// оббщие стили
+@import "./form";
+//стили страници
+@import "./header/header"; 
+@import "./header/hero";
+@import "./main/our-Services";
+@import "./main/our-Story";
+@import "./main/pricing";
+
+
+
+
+

@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.head {
+    @include flex (space-between, center);
+    padding: 45px 0;
+
+    &__logo {
+        font-size: 88px;
+        font-family: QuiteChocolatey;
+        color: #fff;
+    }
+
+    &__menu-items {
+        display: flex;
+        align-items: center;
+    }
+    &__menu-items li {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    &__menu-items li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: MontserratRegular;
+    }
+    .active {
+        padding: 10px 15px;
+        background-color: $secondColor;
+        border-radius: 5px;
+        color: white;
+    }
+}

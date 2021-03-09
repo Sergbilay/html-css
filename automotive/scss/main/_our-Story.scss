@@ -1,0 +1,31 @@
+.main__our-story {
+    background: $secondColor;
+}
+.our-story {
+    @include flex (space-between, center);
+    &__text {
+        color: white;
+        padding: 35px 0;
+        font-size: 20px;
+        font-family: "PT Serif";
+        font-weight: 400;
+    }
+    &__button-text {
+        font-size: 22px;
+        font-family: MontserratRegular;
+        color: #fff;
+        text-transform: uppercase;
+        
+        width: 270px;
+        height: 60px;
+        padding: 0 20px;
+        background: $firstColor;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s linear;
+        margin: 30px 0;
+        letter-spacing: 0.05em;
+    }
+}

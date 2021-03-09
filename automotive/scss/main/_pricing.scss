@@ -1,0 +1,80 @@
+.main__pricing {
+    background: $bgColorPrice;
+    &_title {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 50px;
+        font-family: MontserratRegular;
+        font-weight: bold;
+        color: $secondColor; 
+        text-align: center;
+    }
+}
+.pricing {
+    @include flex (space-between, center);
+    .price-box {
+        background: white;
+        text-align: center;
+        width: 315px;
+        position: relative;
+        &__triangle {
+            position: absolute;
+            z-index: 1000;
+            width: 0;
+            height: 0;
+            border-top: 100px solid red;
+            border-right: 100px solid transparent;
+            &-text {
+                position: absolute;
+                z-index: 2000;
+                font-size: 16px;
+                margin-top: 25px;
+                transform: rotate(-45deg);
+            }
+        }
+        &__title {
+            padding-top: 35px;
+            &-text {
+                font-size: 22px;
+                font-weight: 400;
+                font-family: "PT Serif";
+            }
+        }
+        &__fixed-price {
+            padding-top: 40px;
+            font-size: 60px;
+            font-family: MontserratRegular;
+            font-weight: bold;
+            color: $firstColor;  
+        }
+        &__includes {
+            padding-top: 30px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "PT Serif"; 
+        }
+        &__button {
+            padding-top: 35px;
+            &-text {
+                font-size: 22px;
+                font-family: MontserratRegular;
+                color: #fff;
+                        
+                width: 205px;
+                height: 50px;
+                padding: 0 20px;
+                background: $secondColor;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+                transition: all 0.2s linear;
+                
+                letter-spacing: 0.05em;
+            }
+            &-text:hover {
+                background: $firstColor;
+            }
+        }
+    }
+}
