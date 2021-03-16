@@ -373,6 +373,8 @@ img {
   font-size: 20px;
   font-family: 'PT Serif';
   font-weight: 400;
+  text-align: center;
+  margin-right: 20px;
 }
 
 .main__pricing {
@@ -533,8 +535,8 @@ img {
 
 .testimonial__review-imguser {
   position: absolute;
-  right: 90px;
-  top: 57px;
+  right: 80px;
+  top: 40px;
 }
 
 .testimonial__review-imguser img {
@@ -925,90 +927,89 @@ img {
   }
 }
 
-.our-story {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+@media (max-width: 600px) {
+  .our-story {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .our-story .btn_story {
+    width: 170px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
-.our-story .btn_story {
-  width: 170px;
-  height: 40px;
-  font-size: 16px;
+@media (max-width: 505px) {
+  .head__logo {
+    font-size: 60px;
+    font-family: QuiteChocolatey;
+    color: #fff;
+  }
+  .hero .hero__title h1 {
+    font-size: 40px;
+  }
+  .testimonial {
+    width: 100%;
+    color: #130e27;
+  }
+  .testimonial__review {
+    position: static;
+  }
+  .testimonial__review-content {
+    width: 75%;
+    margin-top: 30px;
+    padding: 25px 20px 25px 25px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
+  .testimonial__review-text {
+    font-size: 16px;
+  }
+  .testimonial__review-user {
+    font-family: 'MontserratRegular';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  .testimonial__review-imguser {
+    position: static;
+  }
+  .testimonial__review-imguser img {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-.head__logo {
-  font-size: 60px;
-  font-family: QuiteChocolatey;
-  color: #fff;
-}
-
-.hero .hero__title h1 {
-  font-size: 40px;
-}
-
-.testimonial {
-  width: 58%;
-  color: #130e27;
-}
-
-.testimonial__title {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Montserrat-Bold';
-  font-weight: bold;
-}
-
-.testimonial__review {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.testimonial__review-content {
-  width: 75%;
-  margin-top: 30px;
-  padding: 25px 20px 25px 25px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-}
-
-.testimonial__review-text {
-  font-size: 16px;
-}
-
-.testimonial__review-user {
-  font-family: 'MontserratRegular';
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: 25px;
-}
-
-.testimonial__review-imguser img {
-  width: 90px;
-  height: 90px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+@media (max-width: 330px) {
+  .hero__title p {
+    display: none;
+  }
+  .gallery .galerry__img {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=style.css.map */

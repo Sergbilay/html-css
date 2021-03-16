@@ -1,0 +1,15 @@
+@media (max-width: 330px) {
+    .hero__title p {
+        display: none;
+
+    }
+    .gallery {
+        .galerry__img {
+            margin-top:  35px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          
+        }
+    }
+}
