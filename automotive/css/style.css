@@ -993,7 +993,7 @@ img {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 370px) {
   .hero__title p {
     display: none;
   }
