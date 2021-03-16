@@ -1,0 +1,14 @@
+@media (max-width: 820px) {
+    .pricing {
+        .price-box {
+            width: 240px;
+        }
+        .btn {
+            &_choice {
+                $btnWidth: 170px;
+                        
+                width: $btnWidth;
+            } 
+        }
+    }
+}

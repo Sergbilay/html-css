@@ -1,0 +1,112 @@
+@media (max-width: 900px) {
+    .head {
+        &__menu {
+            position: relative;
+            &:hover {
+                .head__menu-items {
+                    display: block;
+                    transform: scale(1);
+                }
+            }
+        }
+        &__toggle-menu {
+           display: block;
+        }
+        &__menu-items {
+            display: none;
+            transform: scale(0);
+            position: absolute;
+            background: rgb(240, 240, 240);
+            top: 20px;
+            right: 0;
+            width: 350px;
+            height: 100vh;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        &__menu-items li {
+            padding-left: 0;
+        } 
+        &__menu-items li a {
+            padding: 15px;
+        }
+        .active {
+            padding: 15px;
+        }
+    }
+    .hero {
+        &__content {
+            padding-top: 130px;
+        }
+        &__title h1 {
+            font-size: 70px;
+        }
+        .form {
+            width: 320px;
+            padding: 10px;
+            &__title {    
+                padding: 20px 0;
+            }
+            &__input {
+                width: 280px;
+            }
+            &__input-bg {
+                font-size: 18px;
+            }
+        } 
+        .btn {
+            margin: 20px 0;
+            &_submit {
+                $btnWidth: 280px;
+                                     
+                width: $btnWidth;
+            }
+            &_choice {
+                $btnHeight: 40px;
+                $fontSize: 18px;
+                        
+                height: $btnHeight;
+                font-size: $fontSize;
+            } 
+        }
+    }
+    .main__pricing {
+        &_title {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    .pricing {
+        .price-box {
+            width: 260px;
+            &__triangle {
+                border-top: 75px solid red;
+                border-right: 75px solid transparent;
+            }
+            
+            &__fixed-price {
+                font-size: 55px;
+            }
+        }
+        .btn {
+            &_choice {
+                $btnHeight: 40px;
+                $fontSize: 18px;
+                        
+                height: $btnHeight;
+                font-size: $fontSize;
+            } 
+        }
+    }
+    .our-story {
+        .btn {
+           &_story {
+            $btnWidth: 240px;
+            $btnHeight: 50px;
+           
+            width: $btnWidth;
+            height: $btnHeight;
+            }    
+        }
+    }
+}    

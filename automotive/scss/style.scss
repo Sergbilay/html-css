@@ -12,6 +12,7 @@
     }
 }
 // оббщие стили
+@import "./commons/btns";
 @import "./form";
 //стили страници
 @import "./header/header"; 
@@ -19,8 +20,14 @@
 @import "./main/our-Services";
 @import "./main/our-Story";
 @import "./main/pricing";
-
-
+@import "./main/testimonialgallery";
+@import "./footer/footer";
+@import "./media/media1000px";
+@import "./media/media900px";
+@import "./media/media820px";
+@import "./media/media768px"; 
+@import "./media/media600px"; 
+@import "./media/media505px"; 
 
 
 

@@ -13,7 +13,6 @@
         bottom: 0;
         background: rgba($firstColor, $overlayOpacity);
     }
-
     &__content {
         @include flex (space-between);
         padding-top: 200px;
@@ -26,25 +25,29 @@
     }
 
     &__title h1 {
-        font-size: 60px;
+        font-size: 80px;
+        font-family: 'Montserrat-Bold';
         color: $secondColor;
+        white-space: nowrap;
     }
+
     &__title span {
         display: block;
         color: #fff;
     }
     &__title p {
+        padding-top: 50px;
+        padding-bottom: 150px;
         font-size: 20px;
+        font-family: 'PT Serif';
         color: #fff;
     }
-
     &__form {
         position: relative;
         right: 0;
         bottom: -100px;
         
     }
-  
 }   
     
     

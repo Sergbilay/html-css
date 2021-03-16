@@ -15,7 +15,27 @@
         font-family: QuiteChocolatey;
         color: #fff;
     }
-
+    &__toggle-menu {
+        $linewidth: 30px;
+        $lineHeight: 3px;
+        $lineVargin: 5px;
+        $lineColor: white;
+        display: none;
+        &::before, &::after {
+            content: "";
+            display: block;
+            width: $linewidth;
+            height: $lineHeight;
+            background: $lineColor;
+        }
+        span {
+            display: block;
+            width: $linewidth;
+            height:  $lineHeight;
+            margin: $lineVargin 0;
+            background: $lineColor;
+        }
+    }
     &__menu-items {
         display: flex;
         align-items: center;
@@ -23,6 +43,9 @@
     &__menu-items li {
         text-transform: uppercase;
         padding-left: 15px;
+    }
+    &__menu-items li:hover {
+        background: $secondColor;
     }
     &__menu-items li a {
         text-decoration: none;

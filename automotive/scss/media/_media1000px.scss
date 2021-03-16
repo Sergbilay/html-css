@@ -1,0 +1,34 @@
+@media (max-width: 1000px) {
+    .hero {
+        &__form {
+            position: static;
+            
+        }
+    } 
+    .form {
+        width: 350px;
+        &__input {
+            width: 310px;
+        }
+        &__input-bg {
+            font-size: 18px;
+        }
+    } 
+    .btn {
+        margin: 20px 0;
+        &_submit {
+            $btnWidth: 290px;
+                                 
+            width: $btnWidth;
+        } 
+    }
+    .pricing {
+        .price-box {
+            width: 280px;
+             &__triangle {
+                border-top: 80px solid red;
+                border-right: 80px solid transparent;
+               }
+        }      
+    }
+}

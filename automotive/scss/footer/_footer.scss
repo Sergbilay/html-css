@@ -1,0 +1,23 @@
+.footer {
+    background: $secondColor;
+    &__content {
+        @include flex (space-between, center);
+    }
+    &__content {
+        font-size: 20px;
+        font-family: 'PT Serif';
+        padding: 60px 0;
+    }
+    &__copyright {
+        color: white;
+        display: flex;
+    }
+    &__copyright span {
+        color: $firstColor;
+    }
+    &__logo {
+        font-size: 65px;
+        font-family: 'QuiteChocolatey';
+        color: $firstColor;
+    }
+}

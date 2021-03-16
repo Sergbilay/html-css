@@ -14,6 +14,7 @@
         .box-Services {
             max-width: 175px;
             max-height: 400px;
+            margin-bottom: 10px;
             &__img {
                 width: 140px;
                 height: 140px;
@@ -24,7 +25,7 @@
                 margin-top: 45px;
                 font-size: 20px;
                 text-align: center ;
-                font-family: "PT Serif";
+                font-family: 'PT Serif';
                 font-weight: bold;
             }
         }

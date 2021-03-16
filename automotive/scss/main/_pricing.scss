@@ -1,10 +1,11 @@
 .main__pricing {
     background: $bgColorPrice;
+    padding-bottom: 50px;
     &_title {
         padding-top: 60px;
         padding-bottom: 60px;
         font-size: 50px;
-        font-family: MontserratRegular;
+        font-family: 'Montserrat-Bold';
         font-weight: bold;
         color: $secondColor; 
         text-align: center;
@@ -16,6 +17,8 @@
         background: white;
         text-align: center;
         width: 315px;
+        border-radius: 5px;
+
         position: relative;
         &__triangle {
             position: absolute;
@@ -37,13 +40,13 @@
             &-text {
                 font-size: 22px;
                 font-weight: 400;
-                font-family: "PT Serif";
+                font-family: 'PT Serif';
             }
         }
         &__fixed-price {
             padding-top: 40px;
             font-size: 60px;
-            font-family: MontserratRegular;
+            font-family: 'Montserrat-Bold';
             font-weight: bold;
             color: $firstColor;  
         }
@@ -51,30 +54,10 @@
             padding-top: 30px;
             font-size: 20px;
             font-weight: 400;
-            font-family: "PT Serif"; 
+            font-family: 'PT Serif'; 
         }
         &__button {
             padding-top: 35px;
-            &-text {
-                font-size: 22px;
-                font-family: MontserratRegular;
-                color: #fff;
-                        
-                width: 205px;
-                height: 50px;
-                padding: 0 20px;
-                background: $secondColor;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
-                text-align: center;
-                transition: all 0.2s linear;
-                
-                letter-spacing: 0.05em;
-            }
-            &-text:hover {
-                background: $firstColor;
-            }
         }
     }
 }
