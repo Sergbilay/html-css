@@ -1,0 +1,49 @@
+@media (max-width: 505px) {
+    .head {
+        &__logo {
+            font-size: 60px;
+            font-family: QuiteChocolatey;
+            color: #fff;
+        }
+    }
+    .hero {
+        
+        .hero__title h1 {
+            font-size: 40px;
+        }
+    }
+    .testimonial {
+        width: 100%;
+        color: $secondColor;
+        
+        &__review {
+        position: static;
+            &-content {
+                width: 75%;
+                margin-top: 30px;
+                padding: 25px 20px 25px 25px;
+                border-radius: 5px;
+            }
+            
+            &-text{
+                font-size: 16px;
+            }
+            
+            &-user {
+                font-family: 'MontserratRegular';
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: 25px;
+            }
+            &-imguser {
+                position:static;
+                
+            }
+            
+            &-imguser img {
+                width: 90px; 
+                height: 90px;
+            }
+        }
+    }
+}

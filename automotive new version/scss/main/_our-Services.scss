@@ -1,0 +1,33 @@
+.our-Services {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    &__title  {
+        font-size: 50px;
+        color: $secondColor;
+    }
+    &__title span{
+        color: $firstColor;
+    }
+    &__content {
+        @include flex (space-between, center);
+        margin-top: 95px;
+        .box-Services {
+            max-width: 175px;
+            max-height: 400px;
+            margin-bottom: 10px;
+            &__img {
+                width: 140px;
+                height: 140px;
+                display: block;
+                margin: 0 auto;
+            } 
+            &__text {
+                margin-top: 45px;
+                font-size: 20px;
+                text-align: center ;
+                font-family: 'PT Serif';
+                font-weight: bold;
+            }
+        }
+    }
+}

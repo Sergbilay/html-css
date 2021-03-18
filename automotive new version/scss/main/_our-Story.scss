@@ -1,0 +1,16 @@
+.main__our-story {
+    background: $secondColor;
+}
+.our-story {
+    @include flex (space-between, center);
+    &__text {
+        color: white;
+        padding: 35px 0;
+        font-size: 20px;
+        font-family: 'PT Serif';
+        font-weight: 400;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+}

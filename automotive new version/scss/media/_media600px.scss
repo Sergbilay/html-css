@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+    .our-story {
+        @include flex (center, center);
+        flex-wrap: wrap;
+        .btn {
+            &_story {
+            $btnWidth: 170px;
+            $btnHeight: 40px;
+            $fontSize: 16px;
+            
+            width: $btnWidth;
+            height: $btnHeight;
+            font-size: $fontSize;
+            }    
+        }   
+    }
+}

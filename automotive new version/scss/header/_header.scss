@@ -1,0 +1,72 @@
+.head-hero-bg {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($firstColor, $overlayOpacity);
+    }
+}
+.header {
+    position: relative;
+}
+
+.head {
+    @include flex (space-between, center);
+    padding: 45px 0;
+
+    &__logo {
+        font-size: 88px;
+        font-family: QuiteChocolatey;
+        color: #fff;
+    }
+    
+    &__toggle-menu {
+        $linewidth: 30px;
+        $lineHeight: 3px;
+        $lineMargin: 5px;
+        $lineColor: white;
+        display: none;
+        &::before, &::after {
+            content: "";
+            display: block;
+            width: $linewidth;
+            height: $lineHeight;
+            background: $lineColor;
+        }
+        span {
+            display: block;
+            width: $linewidth;
+            height:  $lineHeight;
+            margin: $lineMargin 0;
+            background: $lineColor;
+        }
+    }
+    &__menu-items {
+        display: flex;
+        align-items: center;
+    }
+    &__menu-items li {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    &__menu-items li:hover {
+        padding: 5px 5px;
+        background-color: $secondColor;
+        border-radius: 5px;
+        color: white;
+    }
+    &__menu-items li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: MontserratRegular;
+    }
+}

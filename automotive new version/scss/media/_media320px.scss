@@ -1,0 +1,32 @@
+@media (max-width: 370px) {
+    .head {
+        &__menu-items {
+            width: 250px;
+            }
+    }
+    .hero {
+        .hero__content {
+            padding-top: 10px;
+        }
+        .hero__title p {
+            display: none;
+
+        }
+        .form {
+            width: 270px;
+            &__input {
+                width: 200px;
+                height: 40px;
+            }
+        }
+    }
+    .gallery {
+        .galerry__img {
+            margin-top:  35px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          
+        }
+    }
+}

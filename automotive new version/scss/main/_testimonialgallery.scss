@@ -1,0 +1,99 @@
+.main__testimonialgallery {
+    background: white;
+}
+.testimonialgallery {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+.testimonial {
+    width: 58%;
+    color: $secondColor;
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Montserrat-Bold';
+        font-weight: bold;
+    }
+    &__review {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-content {
+            width: 75%;
+            margin-top: 30px;
+            padding: 25px 70px 25px 25px;
+            border-radius: 5px;
+        }
+        &-content-bg {
+            background: #efefef;
+        }
+        &-text{
+            font-family: 'PT Serif';
+            font-size: 20px;
+        }
+        &-text-colorred {
+            color: $firstColor;
+        }
+        &-user {
+            font-family: 'MontserratRegular';
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 25px;
+        }
+        &-imguser {
+            position: absolute;
+            right: 80px;
+            top: 40px;
+        }
+        &-imguser img {
+            width: 105px; 
+            height: 105px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                
+        }
+     }
+}
+.gallery {
+    width: 42%;
+    &__title {
+        text-align: center;
+        color: $firstColor;
+        font-size: 50px;
+        font-family: 'Montserrat-Bold';
+        font-weight: bold;
+    }
+    .galerry__img {
+        margin-top:  35px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .galerry__img-picture {
+            padding-top: 20px;
+        }
+        .galerry__img-picture img {
+            width: 105px; 
+            height: 105px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            margin-right: 10px;
+        }
+    }
+    &__link {
+        margin-top: 40px;
+        &-pictures {
+            font-family: 'MontserratRegular';
+            font-weight: 700;
+            font-size: 20px;
+            color: $secondColor;
+            text-align: center;
+        }
+        &-pictures:hover {
+            color: $firstColor;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "./var";
+@import "./mixins";
+@import "./fonts";
+@import "./normilize";
+.wrapper{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_posrel {
+        position: relative;
+        z-index: 1;
+    }
+}
+// оббщие стили
+@import "./commons/btns";
+@import "./form";
+//стили страници
+@import "./header/header"; 
+@import "./header/hero";
+@import "./main/our-Services";
+@import "./main/our-Story";
+@import "./main/pricing";
+@import "./main/testimonialgallery";
+@import "./footer/footer";
+@import "./media/media1000px";
+@import "./media/media900px";
+@import "./media/media820px";
+@import "./media/media768px"; 
+@import "./media/media600px"; 
+@import "./media/media505px"; 
+@import "./media/media320px"; 
+
+
+
