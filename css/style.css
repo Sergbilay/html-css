@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+	background: url(../img/blur-background-1.jpg) no-repeat;
+}
+a{
+    display: block;
+	text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.githab  {
+	margin: 0 auto;
+	width: 1024px;
+	display: flex;
+}
+.githab__HTML, .githab__JS {
+	margin-top: 100px;
+	width: 50%;
+}
+.githab__HTML_titel, .githab__JS_titel {
+	font-size: 40px;
+	color: #483D8B;
+}
+.githab__list {
+	padding-top: 50px;
+}
+.githab__list a{
+	color: #2F4F4F;
+	font-size: 26px;
+}
+.githab__list_items {
+	margin-bottom: 15px;
+}
+.githab__list_items:hover a{
+	cursor: pointer;
+	transform: translateX(15px);
+}
