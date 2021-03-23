@@ -1,0 +1,12 @@
+@import "./normilize";
+@import "./fonts.scss";
+@import "./mixins";
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@import "./header/header";
+@import "./hero/hero";
+@import "./main/main";
+

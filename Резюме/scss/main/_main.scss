@@ -1,0 +1,21 @@
+.main {
+    margin-top: 40px;
+    &__content {
+        height: 200px;
+        padding: 0 20px;
+        background: chocolate;
+        @include flex (space-between, center);
+           
+    }
+    &__content p {
+        margin-left: 100px;
+        font-size: 40px;
+        align-content: center;
+       
+    }
+    .content_qualitylist p{
+        font-size: 30px;
+        padding-right: 40px;
+        color: beige;
+    }
+}
