@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+a{
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.block1 {
+   background: yellow;
+   padding-left: 50px;
+}
+.block2 {
+    background: wheat;
+    padding-left: 50px;
+}
+.block3 {
+    background: turquoise;
+    padding-left: 50px;
+}
+.block4 {
+    background: violet;
+    padding-left: 50px;
+}
+.block5 {
+    background: yellowgreen;
+    padding-left: 50px;
+}
+.block-position {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
