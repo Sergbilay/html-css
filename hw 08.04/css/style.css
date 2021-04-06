@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+li {
+  list-style-type: none;
+}
+.container {
+  width: 800px;
+  margin: 50px auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.box {
+  margin: 0 auto;
+  width: 360px;
+  height: 400px;
+  background: url(../img/start.jpg);
+  background-position: 50% 50%;
+}
+
+.box.b1 {
+  background: url(../img/img1.jpg);
+  background-position: 50% 50%;
+
+}
+.box.b2 {
+  background: url(../img/img2.jpg);
+  background-position: 50% 50%;
+}
+.box.b3 {
+  background: url(../img/img3.jpg);
+  background-position: 50% 50%;
+}
