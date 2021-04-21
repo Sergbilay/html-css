@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+li {
+  list-style-type: none;
+}
+.container {
+  width: 400px;
+  margin: 50px auto;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+select, input, button {
+  width: 200px;
+  height: 30px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
